@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: skyblue;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            background-color: black;
+            overflow: hidden;
+            padding: 20px;
+            color: green;
+            text-align: center;
+            margin-left: -18px;
+            margin-right: -18px;
+        }
+
+        .work {
+            float: left;
+            margin-top: -30px;
+        }
+
+        .footer {
+            background-color: black;
+            overflow: hidden;
+            padding: 20px;
+            color: green;
+            text-align: center;
+            margin-top: 290px;
+            margin-left: 2px;
+        }
+
+        .form {
+            float: right;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <h1> Exercise 1:2:3</h1>
+        <form action="" class="form">
+            <input type="text" name="" id="" placeholder="search">
+            <button>click</button>
+        </form>
+        <h2 class="work"></h2>
+    </div>
+
+    <P> <button onmouseover="highlight()" onmouseout="return_normal()">Bold text turns into highlight</button>
+        <strong>College life</strong>
+        is more interesting than high school, but more challenging since when I was in High School my
+        Academic Strand is <strong>TVL-Agriculture</strong> which is not good to this kind of course i have right now.
+        Since The <strong>Passerelles Numeriques</strong> give me a
+        chance to have new set of life, and I grab this opportunity. Since I am not really know what should the IT can
+        do to the industry and what
+        should do IT can do to my life. And a whole life that i have before i enter in PN, really dont have any
+        background in computer.
+        And also im not a kind of a person who can easily understand especially in logic which is really need to this
+        kind of course. But instead of giving up,
+        i always bear in my mind that i am here in PN because of my family and to my dreams. In that way, I learned how
+        to accept IT industry to my life and
+        to love it. And PN also give not just good in Academic but also they teach how to act professionally and also
+        being independent. And also, i build my confidence
+        in a way of talking to stranges and ask more question which is connect to the <strong>confidence hack</strong>
+        in PN subject. And
+        also my confidence more develops in joining <strong>Miss Gay</strong>
+        in PN. That is one of my unforgetable moments in my college life.
+
+        IT for me right now is not easy to study, since I already here and my dreams depend on it. And i beleive in this
+        saying <strong> “There is no failure except in no longer trying.” - Chris Bradford</strong>.
+        that qoutes serve as my foundation every obstacles that i encounter in my life. And i beleive in myself that i
+        can make it, can do everything especially in <strong>PROGRAMING</strong> since it should have critical thinking
+        and have more logic so that you
+        really solve the sample problem that you find a solution.
+    <p>
+        In this college life i should give the best all I can do so that i can pass so that my parents proud of me. Also
+        college life need more focus and have time management in everything you do in every hour, minute, seconds, day
+        week, months or year.
+    </p>
+    </P>
+    <center>
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    </center>
+    <center>
+        <img src="img1.png" alt="">
+        <img src="img2.png" height="201px" ; width="200px">
+        <img src="img3.jpg" height="201px" ; width="200px">
+        <br>
+        <button onclick="countImg()" class="buttonM">count the image</button>
+    </center>
+    <center>
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    </center>
+    <center>
+        <h1 id="text">These buttons are all active.</h1>
+        <button onclick="message()">Btn1</button>
+        <button onclick="message()">Btn2</button>
+        <button onclick="message()">Btn3</button>
+        <button onclick="disable(3)">Disable all</button>
+    </center>
+    <div class="footer">
+        <a href="">romeo.rodemio@gmail.com</a>
+    </div>
+</body>
+<script>
+    function highlight() {
+        bold_Items = document.getElementsByTagName('strong');
+        for (var i = 0; i < bold_Items.length; i++) {
+            bold_Items[i].style.color = "green";
+        }
+    }
+    function return_normal() {
+        for (var i = 0; i < bold_Items.length; i++) {
+            bold_Items[i].style.color = "black";
+        }
+    }
+    //counting images script
+    function countImg() {
+        alert("The number of images is " + document.getElementsByTagName("img").length);
+    }
+    // disable button script
+    function message() {
+        alert("Button is active");
+    }
+    function disable(num) {
+        let btn = document.getElementsByTagName("button");
+        for (let i = 0; i < btn.length; i++) {
+            if (btn[i] != num) {
+                btn[i].removeAttribute("onclick");
+                document.getElementById("text").innerHTML = "The rest of the buttons are disabled!";
+
+            }
+        }
+    }
+</script>
+
+</html>

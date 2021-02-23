@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Exercie 1: </h1>
+    <input type="text" name="" id="n1" placeholder="Enter number"> <br /> <br />
+    <input type="text" name="" id="n2" placeholder="Enter another number"> <br /> <br />
+    <select id="operators">
+        <option inputmode.innerHTML="+">+</option>
+        <option inputmode.innerHTML="-">-</option>
+        <option inputmode.innerHTML="*">x</option>
+        <option inputmode.innerHTML="/">/</option>
+    </select>
+    <button onclick="calc();">= </button>
+    <input type="text" id="results">
+
+    <script>
+
+        function calc() {
+            var n1 = parseInt(document.getElementById('n1').value);
+            var n2 = parseInt(document.getElementById('n2').value);
+            var oper = document.getElementById('operators').value;
+
+            if (oper == "+") {
+                document.getElementById('results').value = n1 + n2;
+
+            }
+            if (oper == "-") {
+                document.getElementById('results').value = n1 - n2;
+            }
+            if (oper == "x") {
+                document.getElementById('results').value = n1 * n2;
+            }
+            if (oper == "/") {
+                document.getElementById('results').value = n1 / n2;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

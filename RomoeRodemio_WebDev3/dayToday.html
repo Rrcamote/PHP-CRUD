@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Exercise 2:</h1>
+    <p>What date today and how many days before the next sunday</p>
+    <button onclick="dayToday()" class="day">Day</button>
+    <script>
+        function dayToday() {
+            var today = new Date();
+            var todays = today.getDay;
+            document.write(today);
+            var day = today.getDay();
+            var Dayleft = 14 - day;
+            document.write("<br>The remaining days before next sunday is : " + "<br>" + Dayleft);
+        }
+
+    </script>
+</body>
+
+</html>

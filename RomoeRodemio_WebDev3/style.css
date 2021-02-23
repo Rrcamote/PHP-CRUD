@@ -1,0 +1,25 @@
+body {
+    background-image: url('https://www.lifewire.com/thmb/oVJgYpW79h7rJdV-29-3Lc3OmE4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-binary-and-how-does-it-work-4692749-1-1eaec2e636424e71bb35419ef8d5005b.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {  
+    color: skyblue;
+    }
+input[type=text]{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: whitesmoke; 
+    font-family: "Times New Roman", Times, serif;
+}
+button {
+    background-color: #4CAF50;  
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+}
+#results {
+    padding: 10px .5px;
+}
+
